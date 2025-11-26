@@ -1,11 +1,16 @@
-🛍️ MercApp — Aplicación de Catálogo y Carrito de Compras
+📦 MercApp — Aplicación de Catálogo y Carrito de Compras
 
-Proyecto académico desarrollado con Vue 3 + Vite en el frontend y Node.js + Express en el backend, cumpliendo con todas las funcionalidades solicitadas: CRUD de productos, gestión de categorías, carrito de compras persistente y arquitectura separada.
+Proyecto académico desarrollado con Vue 3 + Vite en el frontend y Node.js + Express en el backend, cumpliendo con todas las funcionalidades solicitadas:
+✔ CRUD de productos
+✔ Gestión de categorías
+✔ Carrito de compras persistente
+✔ Arquitectura desacoplada: Backend ↔ Frontend
+✔ Proyecto final completamente funcional
 
-📂 Estructura del Proyecto
+🗂 Estructura del Proyecto
 mercapp/
- ├── backend/     → API REST con Express, fileDb y rutas de productos/categorías
- └── frontend/    → Aplicación en Vue 3 (Vite), router, composables y vistas
+├── backend/     → API REST con Express, fileDb y rutas de productos/categorías
+└── frontend/    → Aplicación Vue 3 (Vite), router, composables y vistas
 
 🚀 Tecnologías Utilizadas
 Frontend
@@ -26,101 +31,74 @@ Node.js
 
 Express.js
 
-fileDb (JSON como base de datos)
+fileDb (JSON como almacenamiento)
 
 CORS
 
-⚙️ Instalación y Ejecución
-🔧 1. Clonar el repositorio
+🛠 Instalación y Ejecución del Proyecto
+🔽 1. Clonar el repositorio
 git clone https://github.com/AngeloChavezz/mercapp.git
+cd mercapp
 
-🔧 2. Instalar dependencias
-Backend
+🟦 2. Instalación del Backend
 cd backend
 npm install
 npm run dev
 
-Frontend
 
-Abrir otra terminal:
+Backend por defecto corre en:
+
+http://localhost:3000
+
+🟩 3. Instalación del Frontend
+
+En otra terminal:
 
 cd frontend
 npm install
 npm run dev
 
-📌 Funcionalidades Principales
-🛒 Catálogo
 
-Listado completo de productos
+Frontend por defecto corre en:
 
-Filtro por categoría
+http://localhost:5173
 
-Búsqueda por nombre o descripción
+📡 Endpoints del Backend
+Productos
+Método	Ruta	Descripción
+GET	/api/products	Obtener todos los productos
+GET	/api/products/:id	Obtener producto por ID
+POST	/api/products	Crear producto
+PUT	/api/products/:id	Actualizar producto
+DELETE	/api/products/:id	Eliminar producto
+Categorías
+Método	Ruta
+GET	/api/categories
+🛒 Funciones Implementadas en el Frontend
 
-Detalles del producto
+Listado de productos
 
-Imágenes dinámicas
+Vista detallada
 
-🛍️ Carrito de Compras
+CRUD de productos (crear, editar, eliminar)
 
-Añadir productos al carrito
+Selección de categorías
 
-Eliminar productos
+Carrito persistente (localStorage)
+
+Eliminación por ítem
 
 Vaciar carrito
 
-Totales calculados en tiempo real
+Confirmación de compra (Modo Demo)
 
-Persistencia con localStorage
-
-🧩 CRUD de Productos
-
-Crear producto
-
-Editar producto
-
-Eliminar producto
-
-Validaciones completas
-
-Formulario reutilizable
-
-📦 Categorías
-
-Listado dinámico obtenido desde backend
-
-Selección de categoría en formularios
-
-⚠️ Compra Demo
-
-Incluye botón de Finalizar compra (demo) con mensaje simulado.
-
-📁 Base de Datos (FileDB)
-
-products.json
-
-categories.json
-
-La API manipula estos archivos para simular una BD.
-
-📡 Endpoints Principales
-Productos
-GET    /api/products
-GET    /api/products/:id
-POST   /api/products
-PUT    /api/products/:id
-DELETE /api/products/:id
-
-Categorías
-GET /api/categories
-
-👨‍💻 Autor
+👤 Autor
 
 Angelo Jordan Chávez Zamora
 Estudiante de Ingeniería de Software
-Universidad Politécnica Salesiana — UPS
-2025
+Universidad Politécnica Salesiana – UPS
+Año: 2025
 
 📄 Licencia
 
-Uso académico — libre para evaluación y aprendizaje.
+Uso académico, libre para fines de evaluación y aprendizaje.
