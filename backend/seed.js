@@ -1,0 +1,91 @@
+// seed.js
+const { writeJson } = require('./src/utils/fileDb');
+
+const categories = [
+  { id: 'face', name: 'Cuidado Facial' },
+  { id: 'body', name: 'Cuidado Corporal' },
+  { id: 'relax', name: 'Relajación' },
+  { id: 'kits', name: 'Kits y Regalos' },
+];
+
+const products = [
+  {
+    id: 1,
+    name: 'Mascarilla Hidratante',
+    description: 'Mascarilla facial hidratante profunda para todo tipo de piel.',
+    price: 12.5,
+    imageUrl: '/images/mascarilla.jpg',
+    categoryId: 'face',
+    stock: 20,
+  },
+  {
+    id: 2,
+    name: 'Exfoliante Corporal de Azúcar',
+    description: 'Exfoliante corporal de azúcar con aroma a coco para una piel suave.',
+    price: 18.99,
+    imageUrl: '/images/exfoliante.jpg',
+    categoryId: 'body',
+    stock: 15,
+  },
+  {
+    id: 3,
+    name: 'Aceite Esencial de Lavanda',
+    description: 'Aceite esencial relajante ideal para difusor o o masajes.',
+    price: 9.99,
+    imageUrl: '/images/aceite-lavanda.jpg',
+    categoryId: 'relax',
+    stock: 30,
+  },
+  {
+    id: 4,
+    name: 'Sérum Facial Vitamina C',
+    description: 'Sérum iluminador con vitamina C para un rostro más uniforme.',
+    price: 24.5,
+    imageUrl: '/images/serum-vitc.jpg',
+    categoryId: 'face',
+    stock: 18,
+  },
+  {
+    id: 5,
+    name: 'Manteca Corporal de Karité',
+    description: 'Manteca ultra nutritiva para piel seca con manteca de karité.',
+    price: 16.75,
+    imageUrl: '/images/manteca-karite.jpg',
+    categoryId: 'body',
+    stock: 25,
+  },
+  {
+    id: 6,
+    name: 'Sales de Baño Relajantes',
+    description: 'Sales de baño con lavanda y manzanilla para un baño relajante.',
+    price: 11.99,
+    imageUrl: '/images/sales-bano.jpg',
+    categoryId: 'relax',
+    stock: 22,
+  },
+  {
+    id: 7,
+    name: 'Vela Aromática de Vainilla',
+    description: 'Vela aromática de vainilla para crear un ambiente acogedor.',
+    price: 14.25,
+    imageUrl: '/images/vela-vainilla.jpg',
+    categoryId: 'relax',
+    stock: 40,
+  },
+  {
+    id: 8,
+    name: 'Kit Spa en Casa',
+    description: 'Kit con mascarilla, exfoliante y vela aromática para spa en casa.',
+    price: 39.9,
+    imageUrl: '/images/kit-spa.jpg',
+    categoryId: 'kits',
+    stock: 10,
+  },
+];
+
+
+
+writeJson('categories.json', categories);
+writeJson('products.json', products);
+
+console.log('Datos de prueba cargados correctamente.');

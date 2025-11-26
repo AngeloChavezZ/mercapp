@@ -1,0 +1,18 @@
+[
+  {
+    "id": "face",
+    "name": "Cuidado Facial"
+  },
+  {
+    "id": "body",
+    "name": "Cuidado Corporal"
+  },
+  {
+    "id": "relax",
+    "name": "Relajación"
+  },
+  {
+    "id": "kits",
+    "name": "Kits y Regalos"
+  }
+]
